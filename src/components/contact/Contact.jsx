@@ -28,7 +28,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await axios.post("http://localhost:5000/contact", formDetails);
+        let response = await axios.post("https://portfolio-laureano-back.herokuapp.com/", formDetails);
         setButtonText("Send");
         //let result = response.data; 
         if(response.data.code === 200){
