@@ -4,7 +4,8 @@ import { Col, Container, Row } from 'react-bootstrap'
 import contactimg from "../../assets/img/contact-img.svg"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
-const {CORS_URL} = process.env
+const CORS_URL = "http://localhost:5000/contact";
+//const CORS_URL = https://portfolio-laureano-back.herokuapp.com/contact
 const Contact = () => {
     const formInitialDetails = {
         firstName: '',
