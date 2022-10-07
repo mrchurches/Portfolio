@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import contactimg from "../../assets/img/contact-img.svg"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
-
+const {CORS_URL} = process.env
 const Contact = () => {
     const formInitialDetails = {
         firstName: '',
@@ -28,7 +28,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await axios.post("https://portfolio-laureano-back.herokuapp.com/", formDetails);
+        let response = await axios.post(CORS_URL, formDetails);
         setButtonText("Send");
         //let result = response.data; 
         if(response.data.code === 200){
