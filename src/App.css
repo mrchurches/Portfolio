@@ -34,7 +34,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #FCC8B2 !important;
   color: #fff !important;
   font-family: "Centra", sans-serif !important;
 }
@@ -362,7 +362,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #DBD8B3;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -373,7 +373,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #685369;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -401,7 +401,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 120px;
 
   position: relative;
-  background-color: black;
+  background-color: #FCC8B2;
 }
 .project h2 {
 	font-size: 45px;
@@ -409,7 +409,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: #685369;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -598,7 +598,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 20px 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  /* background-image: url('./assets/img/footer-bg.png'); */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
