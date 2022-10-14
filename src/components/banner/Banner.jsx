@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { ArrowRightCircle } from 'react-bootstrap-icons'
 import header from "../../assets/img/header-img.svg"
 import "animate.css"
 import TrackVisibility from 'react-on-screen';
@@ -51,8 +50,8 @@ return (
                 <Col xs={12} md={6} xl={7}>
                     <TrackVisibility>
                     {({isVisible}) => 
-                    <div className={isVisible? "animate__animated animate__bounceIn" : "animate__animated animate__bounceOut"}>
-                        <span className='tagline'>Welcome to my portfolio</span>
+                    <div /*className={isVisible? "animate__animated animate__bounceIn" : "animate__animated animate__bounceOut"}*/ >
+                        {/* <span className='tagline'>Welcome to my portfolio</span> */}
                         <h1>{`Hi i'm Laureano Iglesias `}<span className='wrap'>{text}</span></h1>
                         <p>I'm a fullstack web developer, with great capacity for teamwork, great adaptability and predisposition.<br/> During this year I studied and finished the full stack web developer bootcamp at Henry with +700 hours of practice/theory doing individual and group projects where I learned and perfected my back-end and front-end bases, with extensive use of javascript with their libraries and frameworks.
                             

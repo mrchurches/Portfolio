@@ -34,8 +34,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #FCC8B2 !important;
-  color: #fff !important;
+  background-color: #DBD8B3 !important;
+  color: #221B22 !important;
   font-family: "Centra", sans-serif !important;
 }
 
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #221B22;
 }
 
 .App-link {
@@ -134,14 +134,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #C6D8AF;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #221B22 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -280,7 +280,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+ /* background-image: url('./assets/img/banner-bg.png');*/
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -304,7 +304,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #221B22;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -362,7 +362,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #DBD8B3;
+  background: #EFA48B;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;

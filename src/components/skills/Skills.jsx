@@ -107,7 +107,7 @@ const Skills = () => {
                 </Col>
             </Row>
         </Container>
-        <img className='background-image-left' src={colorSharp} alt="sharp"/>
+        {/* <img className='background-image-left' src={colorSharp} alt="sharp"/> */}
     </section>
 
   )
