@@ -65,24 +65,32 @@ const Banner = () => {
     //     </Container>
 
     // </section>
-      <div
-        id="home"
-        class="d-flex flex-column justify-content-center text-center w-100"
-      >
-        <div>
-          <h1>
-            Hi i'm <span style={{ color: "#685369" }}>Laureano Iglesias</span>
-          </h1>
+    <div class="d-flex w-100 justify-content-center">
+      <div id="home" class="d-flex flex-column text-center w-75">
+        <div className="bar">
+          <div class="d-flex m-1">
+            <div id="red"></div>
+            <div id="yellow"></div>
+            <div id="green"></div>
+          </div>
         </div>
-        <div class=" align-self-center w-75">
-          <h2>Full Stack developer</h2>
-          <p>
-            Welcome to my personal website, im a developer from Argentina in
-            continuous learning, i'm looking for my first professional
-            experience in it world.
-          </p>
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+          <div>
+            <h1>
+              Hi i'm <span style={{ color: "#685369" }}>Laureano Iglesias</span>
+            </h1>
+          </div>
+          <div class="w-75">
+            <h2>Full Stack developer</h2>
+            <p>
+              Welcome to my personal website, im a developer from Argentina in
+              continuous learning, i'm looking for my first professional
+              experience in it world.
+            </p>
+          </div>
         </div>
       </div>
+    </div>
   );
 };
 

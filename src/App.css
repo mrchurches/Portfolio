@@ -58,24 +58,66 @@ p.danger {
 }
 
 /* navbar*/
+.nav-bar{
+  font-size: 1.5rem;
+}
 
 .social{
   margin: 0.5rem;
   list-style:none;
 }
 
-.social :hover{
+/* .social :hover{
   transition: all 1s;
   transform: scale(0.70);
-}
+} */
 
 /* banner */
 
 #home{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: -8px 12px 20px 10px rgba(0, 0, 0, 0.2);
+  height: 80vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+.bar{
+  
+  background-color: #e8e8e8;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding-bottom: 0.5rem;
 }
 
+#green{
+  background-color: #00ce15;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#red{
+  background-color: #ff4f4d;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#yellow{
+  background-color: #ffbb00;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 /* projects */
 
 .pr-box{

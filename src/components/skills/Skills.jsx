@@ -109,7 +109,7 @@ const Skills = () => {
     //     </Container>
     //     {/* <img className='background-image-left' src={colorSharp} alt="sharp"/> */}
     // </section>
-    <div class="d-flex flex-column align-items-center justify-content-center w-100">
+    <div class="d-flex flex-column align-items-center justify-content-center w-100" id="skills">
         <div>
             <h2>Tech skills</h2>
         </div>
