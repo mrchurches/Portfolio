@@ -1,21 +1,32 @@
-import React from 'react'
-import { Col } from 'react-bootstrap'
+import React from "react";
+import { Col } from "react-bootstrap";
 
-const ProjectCard = ({title, description, imgUrl}) => {
+const ProjectCard = ({ title, description, imgUrl, repository, deploy }) => {
   return (
-    <Col sm={6} md={4}>
-      
-        <div className='proj-imgbx'>
-            <img src={imgUrl} alt="projctimg"/>
-            <div className='proj-txtx'>
-                <h4>{title}</h4>
-                <span>{description}</span>
-                <br />
-                <a href={title=== "The countries page"?"https://github.com/mrchurches/PI-Countries-main" :"https://github.com/mrchurches/e-commerce_client"} target="_blank">Link to Repository</a>
-            </div>
+    <div class="pr-box text-center">
+      <div class="pro-img">
+        <img src={imgUrl} alt="img" />
+      </div>
+      <div>
+        <h4>{title}</h4>
+      </div>
+      <div>
+        <span>{description}</span>
+      </div>
+      <div>
+        <div>
+          <a href={repository} target="_blank">
+            Repository
+          </a>
         </div>
-    </Col>
-  )
-}
+        <div>
+          <a href={deploy} target="_blank">
+            Deploy
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
