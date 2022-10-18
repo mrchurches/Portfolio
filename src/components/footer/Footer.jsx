@@ -25,7 +25,7 @@ export const Footer = () => {
     //     </Row>
     //   </Container>
     // </footer>
-    <div class="d-flex justify-content-end" id="connect">
+    <div class="d-flex justify-content-end" id="footer">
       <div>
         <ul class="d-flex">
         <li class="social">

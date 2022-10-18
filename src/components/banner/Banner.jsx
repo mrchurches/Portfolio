@@ -66,7 +66,7 @@ const Banner = () => {
 
     // </section>
     <div class="d-flex w-100 justify-content-center">
-      <div id="home" class="d-flex flex-column text-center w-75">
+      <div id="home" class="d-flex flex-column text-center w-75 mc">
         <div className="bar">
           <div class="d-flex m-1">
             <div id="red"></div>
@@ -77,7 +77,7 @@ const Banner = () => {
         <div class="d-flex flex-column justify-content-center align-items-center h-100">
           <div>
             <h1>
-              Hi i'm <span style={{ color: "#685369" }}>Laureano Iglesias</span>
+              Hi i'm <span style={{ color: "#685369" }}>Laureano Iglesias 👋</span>
             </h1>
           </div>
           <div class="w-75">
@@ -85,7 +85,7 @@ const Banner = () => {
             <p>
               Welcome to my personal website, im a developer from Argentina in
               continuous learning, i'm looking for my first professional
-              experience in it world.
+              experience in it world...
             </p>
           </div>
         </div>

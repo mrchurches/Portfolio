@@ -34,7 +34,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: white !important;
+  background-color: rgb(209, 206, 206) !important;
   color: #303030 !important;
   font-family: "Centra", sans-serif !important;
 }
@@ -58,8 +58,10 @@ p.danger {
 }
 
 /* navbar*/
+
 .nav-bar{
   font-size: 1.5rem;
+  background-color:  rgb(209, 206, 206);
 }
 
 .social{
@@ -74,7 +76,7 @@ p.danger {
 
 /* banner */
 
-#home{
+.mc{
 
   background-color: white;
   border-radius: 1rem;
@@ -118,7 +120,39 @@ p.danger {
   width: 1.5rem;
   height: 1.5rem;
 }
+
+/* skills */
+#skills{
+  margin-top: 2rem;
+}
+.skill-box{
+  width: 50vw;
+}
+
+.triangle {
+  position: relative;
+  background: #d1cece;
+  height: 50vh;
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 56px 56px 0 56px;
+  border-color: #d1cece transparent transparent transparent;
+  left: 83%;
+  transform: translateX(-50%) translateY(100%);
+}
+
 /* projects */
+#projects{
+  background-color: white;
+  z-index: 1;
+}
 
 .pr-box{
   display: flex;
@@ -141,6 +175,8 @@ p.danger {
 }
 
 /* connect */
+#connect{
+}
 
 .arrow{
   margin-left: 1.5rem;
@@ -148,4 +184,18 @@ p.danger {
 
 .arrow :hover{
  cursor: grab; 
+}
+
+/* footer */
+
+#footer{
+  margin-right: 3rem;
+}
+
+#form-contact{
+  margin-top: 2rem;
+}
+
+#form-contact textarea{
+  width: 20rem;
 }

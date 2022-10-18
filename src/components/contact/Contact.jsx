@@ -91,86 +91,112 @@ const Contact = () => {
     //         </Row>
     //     </Container>
     // </section>
-    <div class=" d-flex flex-column align-items-center">
-      <form onSubmit={handleSubmit}>
-        {/* <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=> onFormUpdate("firstName", e.target.value)}/>
-            <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=> onFormUpdate("lastName", e.target.value)}/>
-            <input type="email" value={formDetails.email} placeholder="Email" onChange={(e)=> onFormUpdate("email", e.target.value)}/>
-            <input type="tel" value={formDetails.phone} placeholder="Phone number" onChange={(e)=> onFormUpdate("phone", e.target.value)}/>
-            <textarea row="6" value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate("message", e.target.value)} /> */}
-        <div class="mb-3">
-          <label for="first-name" class="form-label">
-            First name
-          </label>
-          <input
-            type="text"
-            value={formDetails.firstName}
-            placeholder="First Name"
-            class="form-control"
-            id="first-name"
-            aria-describedby="first-name"
-            onChange={(e) => onFormUpdate("firstName", e.target.value)}
-          />
-        </div>
-        <div class="mb-3">
-          <label for="last-name" class="form-label">
-            Last name
-          </label>
-          <input
-            type="text"
-            value={formDetails.lastName}
-            placeholder="Last Name"
-            class="form-control"
-            id="last-name"
-            aria-describedby="last-name"
-            onChange={(e) => onFormUpdate("lastName", e.target.value)}
-          />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">
-            Email
-          </label>
-          <input
-            type="email"
-            value={formDetails.email}
-            placeholder="Email"
-            class="form-control"
-            id="email"
-            aria-describedby="email"
-            onChange={(e) => onFormUpdate("email", e.target.value)}
-          />
-          <div id="emailHelp" class="form-text">
-            I'll never share your email with anyone else.
+    <div class="d-flex w-100 justify-content-center">
+      <div id="connect" class=" d-flex flex-column align-items-center mc w-75">
+        <div className="bar w-100">
+          <div class="d-flex m-1">
+            <div id="red"></div>
+            <div id="yellow"></div>
+            <div id="green"></div>
           </div>
         </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">
-            Sent a message
-          </label>
-          <br />
-          <textarea
-            value={formDetails.message}
-            placeholder="Message"
-            onChange={(e) => onFormUpdate("message", e.target.value)}
-          />
+        <div class="">
+          <form
+            onSubmit={handleSubmit}
+            id="form-contact"
+            class="d-flex flex-column"
+          >
+            {/* <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=> onFormUpdate("firstName", e.target.value)}/>
+                  <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=> onFormUpdate("lastName", e.target.value)}/>
+                  <input type="email" value={formDetails.email} placeholder="Email" onChange={(e)=> onFormUpdate("email", e.target.value)}/>
+                  <input type="tel" value={formDetails.phone} placeholder="Phone number" onChange={(e)=> onFormUpdate("phone", e.target.value)}/>
+                  <textarea row="6" value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate("message", e.target.value)} /> */}
+            <div class="mb-3">
+              <label for="first-name" class="form-label">
+                First name
+              </label>
+              <input
+                type="text"
+                value={formDetails.firstName}
+                placeholder="First Name"
+                class="form-control"
+                id="first-name"
+                aria-describedby="first-name"
+                onChange={(e) => onFormUpdate("firstName", e.target.value)}
+              />
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="form-label">
+                Last name
+              </label>
+              <input
+                type="text"
+                value={formDetails.lastName}
+                placeholder="Last Name"
+                class="form-control"
+                id="last-name"
+                aria-describedby="last-name"
+                onChange={(e) => onFormUpdate("lastName", e.target.value)}
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">
+                Email
+              </label>
+              <input
+                type="email"
+                value={formDetails.email}
+                placeholder="Email"
+                class="form-control"
+                id="email"
+                aria-describedby="email"
+                onChange={(e) => onFormUpdate("email", e.target.value)}
+              />
+              <div id="emailHelp" class="form-text">
+                I'll never share your email with anyone else.
+              </div>
+            </div>
+            {/* <div class="mb-3">
+              <label for="message" class="form-label">
+                Sent a message
+              </label>
+              <br />
+              <textarea
+                value={formDetails.message}
+                placeholder="Message"
+                onChange={(e) => onFormUpdate("message", e.target.value)}
+              />
+            </div> */}
+            <div class="form-floating">
+              <textarea
+                value={formDetails.message}
+                onChange={(e) => onFormUpdate("message", e.target.value)}
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Send me a message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary">
-          Submit
-        </button>
-      </form>
-      <div>
-        {formDetails.firstName === "" &&
-          formDetails.lastName === "" &&
-          formDetails.email === "" &&
-          formDetails.message === "" &&
-          "You must complete all inputs"}
-      </div>
-      <div>
-        {status.message && (
-          <p className={status.success === false ? "danger" : "success"}>
-            {status.message}
-          </p>
-        )}
+        <div >
+          {formDetails.firstName === "" ||
+            formDetails.lastName === "" ||
+            formDetails.email === "" ||
+            formDetails.message === "" ?
+            <p class="danger">You must complete all inputs</p> : ""
+            }
+        </div>
+        <div>
+          {status.message && (
+            <p className={status.success === false ? "danger" : "success"}>
+              {status.message}
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );
