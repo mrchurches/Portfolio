@@ -115,7 +115,7 @@ const Skills = () => {
         id="skills"
       >
         <div>
-          <h2 class="hvr-bubble-float-bottom bg-black">Tech skills</h2>
+          <h2 class="hvr-underline-from-center">Tech skills</h2>
         </div>
         <div class="d-flex flex-wrap align-items-center justify-content-center skill-box">
           <h5>Javascript</h5>
@@ -133,7 +133,7 @@ const Skills = () => {
           <h5>Bootstrap</h5>
         </div>
         <div>
-          <h2>Soft skills</h2>
+          <h2 class="hvr-underline-from-center">Soft skills</h2>
         </div>
         <div class="flex-wrap text-center skill-box">
           <p>

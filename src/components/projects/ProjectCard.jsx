@@ -4,6 +4,13 @@ import { Col } from "react-bootstrap";
 const ProjectCard = ({ title, description, imgUrl, repository, deploy }) => {
   return (
     <div class="pr-box text-center">
+       <div className="bar">
+          <div class="d-flex m-1">
+            <div id="red"></div>
+            <div id="yellow"></div>
+            <div id="green"></div>
+          </div>
+        </div>
       <div class="pro-img">
         <img src={imgUrl} alt="img" />
       </div>

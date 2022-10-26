@@ -33,9 +33,9 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="projects">
-      <div class="d-flex flex-column align-items-center justify-content-center w-100">
-        <h2>Projects</h2>
+    <div id="projects" class="p-5">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <h2 class="hvr-underline-from-center">Projects</h2>
       </div>
       <div class="d-flex align-items-center justify-content-center flex-wrap">
         {projects.map((e, index) => {
