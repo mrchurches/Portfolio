@@ -243,7 +243,7 @@ z-index: 1;
 }
 
 .arrow{
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
 }
 
 .arrow :hover{
@@ -265,7 +265,14 @@ z-index: 1;
   position:fixed;
   right: 5px;
   bottom: 0px;
-  margin-right: 3rem;
+  margin-right: 2rem;
+  padding:0.5rem;
+  background: rgba( 147, 147, 147, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13.5px );
+-webkit-backdrop-filter: blur( 13.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /* Footer */
@@ -525,16 +532,23 @@ z-index: 1;
   #footer{
     display: flex;
     flex-direction: column;
-    /* margin-right: 0.07rem; */
+    margin-right: 0.07rem;
     z-index: 3;
   }
 
-  #footer ul{
+  .social-footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer{
     flex-direction: column;
   }
 
   .arrow{
-    margin-left: 2.3rem;
+    margin-left: 0.08rem;
+    margin-top: 0.7rem;
+
   }
 }
 
