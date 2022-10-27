@@ -182,6 +182,14 @@ p.danger {
   height: 10rem;
 }
 
+.curved {
+  position: relative;
+  background: #404040;
+  height: 10vh;
+  border-bottom-left-radius: 50% 74%;
+  border-bottom-right-radius: 50% 74%;
+}
+
 /* connect */
 #connect{
 }

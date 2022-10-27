@@ -33,15 +33,18 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="projects" class="p-5">
-      <div class="d-flex flex-column align-items-center justify-content-center">
-        <h2 class="hvr-underline-from-center">Projects</h2>
+    <div>
+      <div id="projects" class="pt-5">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <h2 class="hvr-underline-from-center">Projects</h2>
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+          {projects.map((e, index) => {
+            return <ProjectCard key={index} {...e} />;
+          })}
+        </div>
       </div>
-      <div class="d-flex align-items-center justify-content-center flex-wrap">
-        {projects.map((e, index) => {
-          return <ProjectCard key={index} {...e} />;
-        })}
-      </div>
+    <section class="curved"></section>
     </div>
   );
 };

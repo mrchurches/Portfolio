@@ -15,6 +15,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      {/* <section class="curved"></section> */}
       <Contact />
       <Footer />
     </div>
