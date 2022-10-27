@@ -66,12 +66,12 @@ const Banner = () => {
 
     // </section>
     <div class="d-flex w-100 justify-content-center">
-      <div id="home" class="d-flex flex-column text-center w-75 mc">
+      <div id="home" class="d-flex flex-column text-center mc">
         <div className="bar">
           <div class="d-flex m-1">
-            <div id="red"></div>
-            <div id="yellow"></div>
-            <div id="green"></div>
+            <div id="red" class="hvr-shrink"></div>
+            <div id="yellow" class="hvr-shrink"></div>
+            <div id="green" class="hvr-shrink"></div>
           </div>
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center h-100">

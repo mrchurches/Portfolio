@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <div class="d-flex w-100 justify-content-center">
-      <div id="connect" class=" d-flex flex-column align-items-center mc w-75">
+      <div id="connect" class=" d-flex flex-column align-items-center mc">
         <div className="bar w-100">
           <div class="d-flex m-1">
             <div id="red"></div>
