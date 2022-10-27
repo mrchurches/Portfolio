@@ -510,6 +510,10 @@ z-index: 1;
 
   }
 
+  #contact-c{
+    width: 80vw;
+  }
+
   #form-contact{
     margin:1rem;
   }
