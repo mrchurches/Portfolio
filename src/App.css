@@ -124,6 +124,7 @@ p.danger {
 /* skills */
 #skills{
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .skill-box{
   width: 40vw;
@@ -132,7 +133,8 @@ p.danger {
 .triangle {
   position: relative;
   background: #d1cece;
-  height: 50vh;
+  /* background: #00ce15; */
+  /* height: 50vh; */
 }
 
 .triangle::before {
@@ -150,7 +152,8 @@ p.danger {
 
 /* projects */
 #projects{
-  background-color: #404040;
+  background: #404040;
+  /* background-image: url("./assets/img/bg.jpg"); */
   z-index: 1;
 }
 
@@ -167,6 +170,7 @@ p.danger {
   margin: 1rem;
   border-radius: 1rem;
   box-shadow: -8px 12px 20px 10px rgb(104, 104, 104);
+
 }
 
 .pro-img img{
@@ -193,6 +197,9 @@ p.danger {
 /* footer */
 
 #footer{
+  position:fixed;
+  right: 5px;
+  bottom: 0px;
   margin-right: 3rem;
 }
 
@@ -202,6 +209,7 @@ p.danger {
 
 #form-contact textarea{
   width: 20rem;
+  margin: 1rem;
 }
 
 /* Footer */
@@ -423,4 +431,45 @@ p.danger {
 .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
+}
+
+
+@media screen and (max-width:685px) {
+
+  .mc{
+    border-radius: 1rem;
+    height: 60vh;
+    width: 80vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+
+  #skills{
+    margin-top: 0.5rem;
+    
+  }
+  .skill-box{
+    width: 90vw;
+
+  }
+
+
+  #form-contact textarea{
+    width: 10rem;
+  }
+
+  #footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.07rem;
+  }
+
+  #footer ul{
+    flex-direction: column;
+  }
+
+  .arrow{
+    margin-left: 2.3rem;
+  }
 }
