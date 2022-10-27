@@ -21,9 +21,9 @@ const Skills = () => {
 
   return (
  
-    <section class="triangle">
+    <section class=" d-flex triangle w-50 align-items-center justify-content-center w-100">
       <div
-        class="d-flex flex-column align-items-center justify-content-center w-100"
+        class="d-flex flex-column align-items-center justify-content-center"
         id="skills"
       >
         <div>

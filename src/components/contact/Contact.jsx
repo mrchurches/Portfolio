@@ -40,8 +40,8 @@ const Contact = () => {
   };
 
   return (
-    <div class="d-flex w-100 justify-content-center">
-      <div id="connect" class=" d-flex flex-column align-items-center mc">
+    <div class="d-flex w-100 justify-content-center" id="connect">
+      <div id="contact-c" class=" d-flex flex-column align-items-center">
         <div className="bar w-100">
           <div class="d-flex m-1">
             <div id="red"></div>
@@ -110,7 +110,7 @@ const Contact = () => {
               ></textarea>
               <label for="floatingTextarea">Send me a message</label>
             </div>
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-secondary">
               Submit
             </button>
           </form>
